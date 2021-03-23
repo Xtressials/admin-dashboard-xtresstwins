@@ -2,7 +2,7 @@
 applications:
 - instances: 1
   timeout: 180
-  name: nodered003xtresstwins
+  name: admin-dashboard-xtresstwins
   buildpack: sdk-for-nodejs
   command: npm start
   disk_quota: 1G
@@ -10,6 +10,6 @@ applications:
   domain: eu-gb.mybluemix.net
   host: admin-dashboard-xtresstwins
   services:
-    - cloudant-xtresstwins-39352
+    - cloudant-xtresstwins-admin-dashboard
   env:
     OPTIMIZE_MEMORY: true
